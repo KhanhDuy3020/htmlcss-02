@@ -5,17 +5,19 @@
 :root {
     --primary-color: #FFB900;
     --second-color: #171100;
-    --guides-color: #000339;
 }
 
-html, body {
+html,
+body {
     font-size: 100%;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     font-family: 'Sen', sans-serif;
 }
 
+
 /* ========== Common ========== */
+
 .main-content {
     width: 1170px;
     max-width: calc(100% - 50px);
@@ -35,7 +37,8 @@ a {
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.75; /* 175% */
+    line-height: 1.75;
+    /* 175% */
     background: var(--second-color);
 }
 
@@ -54,7 +57,9 @@ a {
     display: flex;
 }
 
+
 /* ========== Header ========== */
+
 .header {
     background-color: #FFFCF4;
 }
@@ -91,17 +96,20 @@ a {
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.75rem; /* 175% */
+    line-height: 1.75rem;
+    /* 175% */
 }
 
-.navbar ul a:hover, .navbar li.active a{
+.navbar ul a:hover,
+.navbar li.active a {
     color: var(--second-color);
     text-align: center;
     font-family: Poppins, sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.75rem; /* 175% */
+    line-height: 1.75rem;
+    /* 175% */
 }
 
 .navbar li.active a::after {
@@ -125,12 +133,14 @@ a {
     background: var(--second-color);
 }
 
-.navbar .btn{
+.navbar .btn {
     padding: 11px 41px;
     border-radius: 24.5px;
 }
 
+
 /* ========== Hero ========== */
+
 .hero {
     background-color: #FFFCF4;
     padding-top: 48px;
@@ -142,13 +152,16 @@ a {
     justify-content: space-between;
 }
 
+
 /* Hero left */
+
 .hero .media-block {
     position: relative;
     width: 48.7%;
 }
 
 .media-block .img-media {
+    display: block;
     width: 470px;
     height: 685px;
     flex-shrink: 0;
@@ -161,7 +174,7 @@ a {
     left: 300px;
     bottom: 48px;
     width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
@@ -169,9 +182,10 @@ a {
 
 .media-block .hero-summary .item {
     display: flex;
+    align-items: center;
 }
 
-.media-block .hero-summary .item + .item {
+.media-block .hero-summary .item+.item {
     margin-top: 14px;
 }
 
@@ -207,7 +221,8 @@ a {
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.625rem; /* 185.714% */
+    line-height: 1.625rem;
+    /* 185.714% */
 }
 
 .hero-summary .info .title {
@@ -216,10 +231,13 @@ a {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.875rem; /* 166.667% */
+    line-height: 1.875rem;
+    /* 166.667% */
 }
 
+
 /* Hero right */
+
 .hero .content-block {
     width: 51.3%;
     padding: 64px 0px 63px 130px;
@@ -231,7 +249,8 @@ a {
     font-size: 3.625rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 4.25rem; /* 117.241% */
+    line-height: 4.25rem;
+    /* 117.241% */
     letter-spacing: -0.0725rem;
 }
 
@@ -242,7 +261,8 @@ a {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.875rem; /* 166.667% */
+    line-height: 1.875rem;
+    /* 166.667% */
 }
 
 .content-block .cta-group {
@@ -258,6 +278,7 @@ a {
 
 .content-block .watch-video {
     display: flex;
+    align-items: center;
     margin-left: 28px;
     border: none;
     background-color: #FFFCF4;
@@ -282,7 +303,8 @@ a {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.875rem; /* 166.667% */
+    line-height: 1.875rem;
+    /* 166.667% */
 }
 
 .content-block .stats {
@@ -298,5 +320,161 @@ a {
     font-size: 2.75rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 3.375rem; /* 122.727% */
+    line-height: 3.375rem;
+    /* 122.727% */
+}
+
+
+/* ========== Popular ========== */
+
+.popular {
+    margin: 200px 135px;
+}
+
+.popular .popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Popular top */
+
+.popular .popular-top .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    /* 126.316% */
+    letter-spacing: -0.0475rem;
+}
+
+.popular .popular-top .desc {
+    display: block;
+    /* width: 458px; */
+    margin-top: 1rem;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    /* 166.667% */
+}
+
+.popular .popular-top .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.popular .popular-top .controls .controls-btn {
+    color: var(--primary-color);
+    border: 1px var(--primary-color) solid;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular .popular-top .controls .controls-btn:hover {
+    color: #FFF;
+    background: var(--primary-color);
+}
+
+
+/* Course list */
+
+.popular .course-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.popular .course-item {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+}
+
+.popular .course-item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .thumb {
+    width: calc(100% + 2px);
+    height: 278px;
+    margin: -1px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular .course-item .info {
+    margin: 16px 22px 22px;
+}
+
+.popular .course-item .head,
+.popular .course-item .rating,
+.popular .course-item .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .course-item .title a {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875rem;
+    /* 166.667% */
+}
+
+.popular .course-item .value {
+    margin-left: 6px;
+    color: #FEA31B;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    /* 175% */
+}
+
+.popular .course-item .desc {
+    margin-top: 6px;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+    /* 185.714% */
+}
+
+.popular .course-item .foot {
+    margin-top: 12px;
+}
+
+.popular .course-item .price {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875rem;
+    /* 166.667% */
+}
+
+.popular .course-item .btn {
+    padding: 12px 24px;
+    border-radius: 25px;
 }
