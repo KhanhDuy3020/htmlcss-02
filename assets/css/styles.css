@@ -48,13 +48,13 @@ a {
 
 .line-clamp {
     display: -webkit-box;
-    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.row {
-    display: flex;
+.break-all {
+    word-break: break-all;
 }
 
 
@@ -429,6 +429,7 @@ a {
 }
 
 .popular .course-item .title a {
+    padding-right: 6px;
     color: #171100;
     font-family: Poppins;
     font-size: 1.125rem;
@@ -477,4 +478,91 @@ a {
 .popular .course-item .btn {
     padding: 12px 24px;
     border-radius: 25px;
+}
+
+
+/* ========== Feedback ========== */
+
+.feedback {
+    padding: 96px 0px;
+    background: #2E2100;
+}
+
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.feedback .feedback-item .info {
+    width: 13.6%;
+}
+
+.feedback .feedback-item .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+    object-fit: cover;
+}
+
+.feedback .feedback-item .info .name {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.125rem;
+    /* 141.667% */
+}
+
+.feedback .feedback-item .info .desc {
+    margin-top: 4px;
+    color: #BFBCB2;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+    /* 185.714% */
+}
+
+.feedback .feedback-item .info .dots {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+
+.feedback .feedback-item .info .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #634700;
+    cursor: default;
+}
+
+.feedback .feedback-item .info .dot.active {
+    background-color: #FFB900;
+}
+
+.feedback .feedback-item .content {
+    width: 66%;
+}
+
+.feedback .feedback-item blockquote {
+    margin-left: 30px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 2.5rem;
+    /* 153.846% */
 }
