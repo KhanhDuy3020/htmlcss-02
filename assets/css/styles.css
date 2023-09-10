@@ -652,3 +652,143 @@ a {
     border-radius: 16px;
     object-fit: cover;
 }
+
+
+/* ========== Blog ========== */
+
+.blog {
+    padding: 96px 0px;
+    background: #FFFCF4;
+}
+
+.blog .heading {
+    color: #130606;
+    text-align: center;
+    font-family: Sen;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    /* 126.316% */
+    letter-spacing: -0.0475rem;
+}
+
+.blog .desc {
+    width: 448px;
+    margin: 16px auto;
+    color: #696262;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    /* 175% */
+}
+
+.blog .blog-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.blog .item {
+    flex-shrink: 0;
+    width: calc((100% - 60px) / 3);
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    transition: all ease .3s;
+    transform: translateX(-100%);
+}
+
+.blog .item .thumb {
+    width: 100%;
+    height: 250px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
+
+.blog .info {
+    margin: 20px 20px 28px;
+}
+
+.blog .date {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+    /* 185.714% */
+}
+
+.blog .date::before {
+    content: "";
+    display: inline-block;
+    margin-right: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.blog .date::after {
+    position: absolute;
+    bottom: -12px;
+    content: "";
+    display: inline-block;
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+}
+
+.blog .title {
+    margin-top: 25px;
+    color: var(--second-color);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    /* 175% */
+}
+
+.blog .btn {
+    margin-top: 12px;
+    padding: 12px 21px;
+    border-radius: 25px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.625rem;
+    /* 185.714% */
+}
+
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.blog .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #5F5B53;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    background-color: #FFB900;
+    cursor: default;
+}
